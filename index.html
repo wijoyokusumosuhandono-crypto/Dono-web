@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -106,7 +106,41 @@ h1{
     opacity: 0;
   }
 }
-.footer{
+.energi {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  width: 12px;
+  height: 120px;
+  background: linear-gradient(
+    to top,
+    red,
+    orange,
+    yellow,
+    lime,
+    cyan,
+    blue,
+    violet
+  );
+  border-radius: 20px;
+  filter: blur(8px);
+  animation: kundalini 4s infinite;
+  z-index: -1;
+}
+
+@keyframes kundalini {
+  0% {
+    bottom: -120px;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+  }
+}.footer{
     margin-top:40px;
     padding:20px;
     background:#0a0a3d;
