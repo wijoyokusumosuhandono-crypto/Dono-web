@@ -44,7 +44,20 @@ body{
     object-fit:cover;
     border:5px solid darkblue;
 }
+@keyframes melayang {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(-10px);}
+  100% {transform: translateY(0);}
+}
 
+.profile{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid darkblue;
+    animation: melayang 3s infinite;
+}
 h1{
     color:darkblue;
 }
@@ -68,7 +81,7 @@ h1{
 </style>
 
 </head>
-
+<div class="bintang"></div>
 <body>
 
 <div class="nav">
